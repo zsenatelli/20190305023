@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/windowBackground">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- ScrollView for content -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Name Section -->
+            <TextView
+                android:id="@+id/name_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textSize="16sp"
+                android:textColor="?attr/colorOnSurface"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name_hint"
+                android:inputType="textPersonName"
+                android:padding="16dp"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_dark"
+                android:background="@android:drawable/edit_text"
+                app:layout_constraintTop_toBottomOf="@id/name_label"/>
+
+            <!-- Surname Section -->
+            <TextView
+                android:id="@+id/surname_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/surname"
+                android:textSize="16sp"
+                android:textColor="?attr/colorOnSurface"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/et_name"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <EditText
+                android:id="@+id/et_surname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/surname_hint"
+                android:inputType="textPersonName"
+                android:padding="16dp"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_dark"
+                android:background="@android:drawable/edit_text"
+                app:layout_constraintTop_toBottomOf="@id/surname_label"/>
+
+            <!-- Email Section -->
+            <TextView
+                android:id="@+id/email_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_label"
+                android:textSize="16sp"
+                android:textColor="?attr/colorOnSurface"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/et_surname"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_dark"
+                android:background="@android:drawable/edit_text"
+                app:layout_constraintTop_toBottomOf="@id/email_label"/>
+
+            <!-- ProgressBar -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/et_email"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <!-- Save Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save_changes"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:layout_marginTop="24dp"
+                app:backgroundTint="#4CAF50"
+                android:textColor="@android:color/white"
+                app:layout_constraintTop_toBottomOf="@id/progressBar"/>
+
+            <!-- Note Text -->
+            <TextView
+                android:id="@+id/note_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/note_text"
+                android:textSize="12sp"
+                android:textColor="?android:textColorSecondary"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/btn_save"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

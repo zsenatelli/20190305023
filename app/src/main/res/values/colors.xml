@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary colors -->
+    <color name="primary">#FF6200EE</color>
+    <color name="primary_light">#FF9D6FFF</color>
+    <color name="primary_dark">#FF0000BA</color>
+
+    <!-- Secondary colors -->
+    <color name="secondary">#FF03DAC5</color>
+    <color name="secondary_light">#FF66FFF8</color>
+    <color name="secondary_dark">#FF00A894</color>
+
+    <!-- Background colors -->
+    <color name="light_background">#F5F5F5</color>
+    <color name="dark_background">#FF121212</color>
+
+    <!-- Standard colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray_light">#FFE0E0E0</color>
+    <color name="gray_dark">#FF424242</color>
+
+        <!-- Surface Colors -->
+        <color name="surface_light">#FFFFFFFF</color>
+        <color name="surface_dark">#FF121212</color>
+
+        <!-- On Surface Colors -->
+        <color name="on_surface_light">#FF000000</color>
+        <color name="on_surface_dark">#FFFFFFFF</color>
+
+        <!-- Button Colors -->
+        <color name="new_list_button">#FF9800</color>
+        <color name="all_list_button">#03A9F4</color>
+</resources>

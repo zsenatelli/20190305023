@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ShoppingApp"
+        tools:targetApi="31" >
+        <activity android:name=".SignInActivity" />
+        <activity android:name=".ShoppingListActivity"
+            android:configChanges="locale|layoutDirection"/>
+        <activity android:name=".NewListActivity" />
+        <activity android:name=".Material" />
+        <activity android:name=".MaterialAdapter" />
+        <activity android:name=".MaterialAdapter2" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".ShoppingDetailActivity" />
+
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:configChanges="locale|layoutDirection">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

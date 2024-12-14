@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/materialName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Material Name"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/materialDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Material Date"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

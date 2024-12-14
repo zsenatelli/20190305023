@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="?android:attr/windowBackground">
+
+    <!-- Application Title -->
+
+    <!-- E-mail Label -->
+    <TextView
+        android:id="@+id/tv_shopping_list"
+        android:layout_width="161dp"
+        android:layout_height="91dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email_label"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="start"
+        android:textSize="16sp"/>
+
+    <!-- E-mail TextBox -->
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray_dark"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"/>
+
+    <!-- Password Label -->
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password_label"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="start"
+        android:textSize="16sp"/>
+
+    <!-- Password TextBox -->
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray_dark"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"/>
+
+    <!-- Remember Me Checkbox -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:layout_marginBottom="16dp">
+
+        <CheckBox
+            android:id="@+id/cb_remember_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remember_me"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <!-- Login and Progress Bar Container -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/log_in"
+            android:backgroundTint="#007BFF"
+            android:textColor="#FFFFFF"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/btn_login"
+            android:layout_marginEnd="16dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <!-- Spacer -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Membership Prompt -->
+    <TextView
+        android:id="@+id/tv_membership_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/membership_prompt"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Sign-in Button -->
+    <Button
+        android:id="@+id/btn_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in"
+        android:backgroundTint="#FF5722"
+        android:textColor="#FFFFFF"/>
+</LinearLayout>

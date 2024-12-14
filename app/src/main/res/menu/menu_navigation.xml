@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Profil Menüsü Öğesi -->
+    <item
+        android:id="@+id/menu_profile"
+        android:title="@string/profile"
+        android:icon="@drawable/ic_profile"
+        android:iconTint="@color/black" />
+
+    <!-- Ayarlar Menüsü Öğesi -->
+    <item
+        android:id="@+id/menu_settings"
+        android:title="@string/settings"
+        android:icon="@drawable/ic_settings"
+        android:iconTint="@color/black" />
+
+    <!-- Çıkış Yap Menüsü Öğesi -->
+    <item
+        android:id="@+id/menu_logout"
+        android:title="@string/logout"
+        android:icon="@drawable/ic_logout"
+        android:iconTint="@color/black" />
+
+</menu>
+
